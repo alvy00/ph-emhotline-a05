@@ -6,9 +6,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>PH Emergency Hotline</title>
 </head>
-<body>
+<body class="bg-green-50">
 
-    <nav class="bg-[white] flex justify-between items-center mx-[30px] md:mx-[60px] my-[24px]">
+    <nav class="bg-[white] flex justify-between items-center px-[30px] md:px-[60px] py-[24px]">
         <div class="flex justify-center items-center gap-2 md:gap-5">
             <img src="./assets/logo.png" alt="logo" class="h-[25px] w-[25px] md:h-[55px] md:w-[50px]"/>
             <span class="text-[#006747] font-bold text-[10px] md:text-lg">Emergency <br /> Service</span>
@@ -29,10 +29,336 @@
         <div>
     </nav>
 
-    <section class="mx-auto py-[12px] h-[200px] md:h-[240px] flex flex-col justify-between items-center bg-gradient-to-r from-emerald-900 via-emerald-800 to-emerald-900">
-        <img src="./assets/logo-dark.png" alt="hero section logo" class=" h-[90px] w-[90px]">
+    <!-- Hero section -->
+    <section class="mx-auto py-[12px] h-[170px] md:h-[240px] flex flex-col justify-between items-center bg-gradient-to-r from-emerald-900 via-emerald-800 to-emerald-900">
+        <img src="./assets/logo-dark.png" alt="hero section logo" class=" h-[70px] w-[70px] md:h-[90px] md:w-[90px]">
         <p class=" font-bold text-white text-[20px] md:text-[40px]">Emergency Service Directory</p>
         <p class=" font-semibold text-center text-white text-[10px] md:text-[20px]">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     </section>
+
+    <!-- Main section -->
+    <section class="flex justify-between mx-[30px] my-[50px]">
+
+        <!-- Services -->
+        <div class="grid grid-cols-3 gap-5 cursor-default">
+
+            <!-- Card 1 -->
+            <div class="flex flex-col w-[330px] h-[360px] bg-white rounded-xl drop-shadow-md justify-between items-center w-full py-[30px]">
+                
+                <div class="flex justify-between items-center w-full px-[25px]">
+                    <img class="h-[50px] w-[50px] bg-red-200 p-[9px] rounded-2xl" src="./assets/emergency.png" alt="nation emergency" />
+                    <img class="h-[25px] w-[25px] cursor-pointer hover:border border-white" src="./assets/fav.png" alt="fav icon" />
+                </div>
+
+                <div class="flex flex-col justify-between w-full px-[25px] gap-7">
+                    <div class="flex flex-col gap-w">
+                        <p class="text-xl font-bold">National Emergency Number</p>
+                        <p class="text-sm text-gray-400">National Emergency</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span class="text-3xl font-bold">999</span>
+                        <span class="bg-gray-300 text-gray-700 rounded-4xl text-sm text-center w-[40px]">All</span>
+                    </div>
+                    <div class="flex justify-between items-center gap-5">
+                        <button class="flex justify-center items-center gap-1 border border-gray-400 bg-white-300 w-[50%] h-[40px] rounded-xl cursor-pointer hover:bg-gray-300"> 
+                            <img class="h-[20px] w-[20px]" src="./assets/copy.png" alt="copy" />
+                            <span class="text-gray-500 text-lg ">Copy</span>    
+                        </button>
+                        <button class="flex justify-center items-center gap-1 bg-green-500 w-[50%] h-[40px] rounded-xl cursor-pointer hover:bg-green-600">
+                            <img class="h-[20px] w-[20px]" src="./assets/call.png" alt="call" />
+                            <span class="text-white text-lg">Call</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flex flex-col w-[330px] h-[360px] bg-white rounded-xl drop-shadow-md justify-between items-center w-full py-[30px]">
+                
+                <div class="flex justify-between items-center w-full px-[25px]">
+                    <img class="h-[50px] w-[50px] bg-cyan-100 p-[9px] rounded-2xl" src="./assets/police.png" alt="police emergency" />
+                    <img class="h-[25px] w-[25px] cursor-pointer hover:border border-white" src="./assets/fav.png" alt="fav icon" />
+                </div>
+
+                <div class="flex flex-col justify-between w-full px-[25px] gap-7">
+                    <div class="flex flex-col gap-w">
+                        <p class="text-xl font-bold">Police Service Number</p>
+                        <p class="text-sm text-gray-400">Police</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span class="text-3xl font-bold">999</span>
+                        <span class="bg-gray-300 text-gray-700 rounded-4xl text-sm text-center w-[50px]">Police</span>
+                    </div>
+                    <div class="flex justify-between items-center gap-5">
+                        <button class="flex justify-center items-center gap-1 border border-gray-400 bg-white-300 w-[50%] h-[40px] rounded-xl cursor-pointer hover:bg-gray-300"> 
+                            <img class="h-[20px] w-[20px]" src="./assets/copy.png" alt="copy" />
+                            <span class="text-gray-500 text-lg ">Copy</span>    
+                        </button>
+                        <button class="flex justify-center items-center gap-1 bg-green-500 w-[50%] h-[40px] rounded-xl cursor-pointer hover:bg-green-600">
+                            <img class="h-[20px] w-[20px]" src="./assets/call.png" alt="call" />
+                            <span class="text-white text-lg">Call</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flex flex-col w-[330px] h-[360px] bg-white rounded-xl drop-shadow-md justify-between items-center w-full py-[30px]">
+                
+                <div class="flex justify-between items-center w-full px-[25px]">
+                    <img class="h-[50px] w-[50px] bg-red-200 p-[9px] rounded-2xl" src="./assets/fire-service.png" alt="nation emergency" />
+                    <img class="h-[25px] w-[25px] cursor-pointer hover:border border-white" src="./assets/fav.png" alt="fav icon" />
+                </div>
+
+                <div class="flex flex-col justify-between w-full px-[25px] gap-7">
+                    <div class="flex flex-col gap-w">
+                        <p class="text-xl font-bold">Fire Service Number</p>
+                        <p class="text-sm text-gray-400">Fire Service</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span class="text-3xl font-bold">999</span>
+                        <span class="bg-gray-300 text-gray-700 rounded-4xl text-sm text-center w-[40px]">Fire</span>
+                    </div>
+                    <div class="flex justify-between items-center gap-5">
+                        <button class="flex justify-center items-center gap-1 border border-gray-400 bg-white-300 w-[50%] h-[40px] rounded-xl cursor-pointer hover:bg-gray-300"> 
+                            <img class="h-[20px] w-[20px]" src="./assets/copy.png" alt="copy" />
+                            <span class="text-gray-500 text-lg ">Copy</span>    
+                        </button>
+                        <button class="flex justify-center items-center gap-1 bg-green-500 w-[50%] h-[40px] rounded-xl cursor-pointer hover:bg-green-600">
+                            <img class="h-[20px] w-[20px]" src="./assets/call.png" alt="call" />
+                            <span class="text-white text-lg">Call</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Card 4 -->
+            <div class="flex flex-col w-[330px] h-[360px] bg-white rounded-xl drop-shadow-md justify-between items-center w-full py-[30px]">
+                
+                <div class="flex justify-between items-center w-full px-[25px]">
+                    <img class="h-[50px] w-[50px] bg-red-200 p-[9px] rounded-2xl" src="./assets/ambulance.png" alt="nation emergency" />
+                    <img class="h-[25px] w-[25px] cursor-pointer hover:border border-white" src="./assets/fav.png" alt="fav icon" />
+                </div>
+
+                <div class="flex flex-col justify-between w-full px-[25px] gap-7">
+                    <div class="flex flex-col gap-w">
+                        <p class="text-xl font-bold">Ambulance Service</p>
+                        <p class="text-sm text-gray-400">Ambulance</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span class="text-3xl font-bold">1994-999999</span>
+                        <span class="bg-gray-300 text-gray-700 rounded-4xl text-sm text-center w-[55px]">Health</span>
+                    </div>
+                    <div class="flex justify-between items-center gap-5">
+                        <button class="flex justify-center items-center gap-1 border border-gray-400 bg-white-300 w-[50%] h-[40px] rounded-xl cursor-pointer hover:bg-gray-300"> 
+                            <img class="h-[20px] w-[20px]" src="./assets/copy.png" alt="copy" />
+                            <span class="text-gray-500 text-lg ">Copy</span>    
+                        </button>
+                        <button class="flex justify-center items-center gap-1 bg-green-500 w-[50%] h-[40px] rounded-xl cursor-pointer hover:bg-green-600">
+                            <img class="h-[20px] w-[20px]" src="./assets/call.png" alt="call" />
+                            <span class="text-white text-lg">Call</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Card 5 -->
+            <div class="flex flex-col w-[330px] h-[360px] bg-white rounded-xl drop-shadow-md justify-between items-center w-full py-[30px]">
+                
+                <div class="flex justify-between items-center w-full px-[25px]">
+                    <img class="h-[50px] w-[50px] bg-red-200 p-[9px] rounded-2xl" src="./assets/emergency.png" alt="nation emergency" />
+                    <img class="h-[25px] w-[25px] cursor-pointer hover:border border-white" src="./assets/fav.png" alt="fav icon" />
+                </div>
+
+                <div class="flex flex-col justify-between w-full px-[25px] gap-7">
+                    <div class="flex flex-col gap-w">
+                        <p class="text-xl font-bold">Women & Child Helpline</p>
+                        <p class="text-sm text-gray-400">Women & Child Helpline</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span class="text-3xl font-bold">109</span>
+                        <span class="bg-gray-300 text-gray-700 rounded-4xl text-sm text-center w-[45px]">Help</span>
+                    </div>
+                    <div class="flex justify-between items-center gap-5">
+                        <button class="flex justify-center items-center gap-1 border border-gray-400 bg-white-300 w-[50%] h-[40px] rounded-xl cursor-pointer hover:bg-gray-300"> 
+                            <img class="h-[20px] w-[20px]" src="./assets/copy.png" alt="copy" />
+                            <span class="text-gray-500 text-lg ">Copy</span>    
+                        </button>
+                        <button class="flex justify-center items-center gap-1 bg-green-500 w-[50%] h-[40px] rounded-xl cursor-pointer hover:bg-green-600">
+                            <img class="h-[20px] w-[20px]" src="./assets/call.png" alt="call" />
+                            <span class="text-white text-lg">Call</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Card 6 -->
+            <div class="flex flex-col w-[330px] h-[360px] bg-white rounded-xl drop-shadow-md justify-between items-center w-full py-[30px]">
+                
+                <div class="flex justify-between items-center w-full px-[25px]">
+                    <img class="h-[50px] w-[50px] bg-red-200 p-[9px] rounded-2xl" src="./assets/emergency.png" alt="nation emergency" />
+                    <img class="h-[25px] w-[25px] cursor-pointer hover:border border-white" src="./assets/fav.png" alt="fav icon" />
+                </div>
+
+                <div class="flex flex-col justify-between w-full px-[25px] gap-7">
+                    <div class="flex flex-col gap-w">
+                        <p class="text-xl font-bold">Anti-Corruption Helpline</p>
+                        <p class="text-sm text-gray-400">Anti-Corruption</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span class="text-3xl font-bold">106</span>
+                        <span class="bg-gray-300 text-gray-700 rounded-4xl text-sm text-center w-[50px]">Govt.</span>
+                    </div>
+                    <div class="flex justify-between items-center gap-5">
+                        <button class="flex justify-center items-center gap-1 border border-gray-400 bg-white-300 w-[50%] h-[40px] rounded-xl cursor-pointer hover:bg-gray-300"> 
+                            <img class="h-[20px] w-[20px]" src="./assets/copy.png" alt="copy" />
+                            <span class="text-gray-500 text-lg ">Copy</span>    
+                        </button>
+                        <button class="flex justify-center items-center gap-1 bg-green-500 w-[50%] h-[40px] rounded-xl cursor-pointer hover:bg-green-600">
+                            <img class="h-[20px] w-[20px]" src="./assets/call.png" alt="call" />
+                            <span class="text-white text-lg">Call</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Card 7 -->
+            <div class="flex flex-col w-[330px] h-[360px] bg-white rounded-xl drop-shadow-md justify-between items-center w-full py-[30px]">
+                
+                <div class="flex justify-between items-center w-full px-[25px]">
+                    <img class="h-[50px] w-[50px] bg-red-200 p-[9px] rounded-2xl" src="./assets/emergency.png" alt="nation emergency" />
+                    <img class="h-[25px] w-[25px] cursor-pointer hover:border border-white" src="./assets/fav.png" alt="fav icon" />
+                </div>
+
+                <div class="flex flex-col justify-between w-full px-[25px] gap-7">
+                    <div class="flex flex-col gap-w">
+                        <p class="text-xl font-bold">Electricity Helpline</p>
+                        <p class="text-sm text-gray-400">Electricity Outage</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span class="text-3xl font-bold">16216</span>
+                        <span class="bg-gray-300 text-gray-700 rounded-4xl text-sm text-center w-[80px]">Electricity</span>
+                    </div>
+                    <div class="flex justify-between items-center gap-5">
+                        <button class="flex justify-center items-center gap-1 border border-gray-400 bg-white-300 w-[50%] h-[40px] rounded-xl cursor-pointer hover:bg-gray-300"> 
+                            <img class="h-[20px] w-[20px]" src="./assets/copy.png" alt="copy" />
+                            <span class="text-gray-500 text-lg ">Copy</span>    
+                        </button>
+                        <button class="flex justify-center items-center gap-1 bg-green-500 w-[50%] h-[40px] rounded-xl cursor-pointer hover:bg-green-600">
+                            <img class="h-[20px] w-[20px]" src="./assets/call.png" alt="call" />
+                            <span class="text-white text-lg">Call</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Card 8 -->
+            <div class="flex flex-col w-[330px] h-[360px] bg-white rounded-xl drop-shadow-md justify-between items-center w-full py-[30px]">
+                
+                <div class="flex justify-between items-center w-full px-[25px]">
+                    <img class="h-[50px] w-[50px] bg-red-200 p-[9px] rounded-2xl" src="./assets/emergency.png" alt="nation emergency" />
+                    <img class="h-[25px] w-[25px] cursor-pointer hover:border border-white" src="./assets/fav.png" alt="fav icon" />
+                </div>
+
+                <div class="flex flex-col justify-between w-full px-[25px] gap-7">
+                    <div class="flex flex-col gap-w">
+                        <p class="text-xl font-bold">Brac Helpline</p>
+                        <p class="text-sm text-gray-400">Brac</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span class="text-3xl font-bold">16445</span>
+                        <span class="bg-gray-300 text-gray-700 rounded-4xl text-sm text-center w-[40px]">NGO</span>
+                    </div>
+                    <div class="flex justify-between items-center gap-5">
+                        <button class="flex justify-center items-center gap-1 border border-gray-400 bg-white-300 w-[50%] h-[40px] rounded-xl cursor-pointer hover:bg-gray-300"> 
+                            <img class="h-[20px] w-[20px]" src="./assets/copy.png" alt="copy" />
+                            <span class="text-gray-500 text-lg ">Copy</span>    
+                        </button>
+                        <button class="flex justify-center items-center gap-1 bg-green-500 w-[50%] h-[40px] rounded-xl cursor-pointer hover:bg-green-600">
+                            <img class="h-[20px] w-[20px]" src="./assets/call.png" alt="call" />
+                            <span class="text-white text-lg">Call</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 9 -->
+            <div class="flex flex-col w-[330px] h-[360px] bg-white rounded-xl drop-shadow-md justify-between items-center w-full py-[30px]">
+                
+                <div class="flex justify-between items-center w-full px-[25px]">
+                    <img class="h-[50px] w-[50px] bg-red-200 p-[9px] rounded-2xl" src="./assets/emergency.png" alt="nation emergency" />
+                    <img class="h-[25px] w-[25px] cursor-pointer hover:border border-white" src="./assets/fav.png" alt="fav icon" />
+                </div>
+
+                <div class="flex flex-col justify-between w-full px-[25px] gap-7">
+                    <div class="flex flex-col gap-w">
+                        <p class="text-xl font-bold">Bangladesh Railway Helpline</p>
+                        <p class="text-sm text-gray-400">Bangladesh Railway</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span class="text-3xl font-bold">163</span>
+                        <span class="bg-gray-300 text-gray-700 rounded-4xl text-sm text-center w-[60px]">Travel</span>
+                    </div>
+                    <div class="flex justify-between items-center gap-5">
+                        <button class="flex justify-center items-center gap-1 border border-gray-400 bg-white-300 w-[50%] h-[40px] rounded-xl cursor-pointer hover:bg-gray-300"> 
+                            <img class="h-[20px] w-[20px]" src="./assets/copy.png" alt="copy" />
+                            <span class="text-gray-500 text-lg ">Copy</span>    
+                        </button>
+                        <button class="flex justify-center items-center gap-1 bg-green-500 w-[50%] h-[40px] rounded-xl cursor-pointer hover:bg-green-600">
+                            <img class="h-[20px] w-[20px]" src="./assets/call.png" alt="call" />
+                            <span class="text-white text-lg">Call</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- History -->
+        <div class="w-[400px] bg-white rounded-xl drop-shadow-md px-[30px] py-[20px] cursor-default">
+
+            <!-- header -->
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-1">
+                    <img class="h-[25px] w[25px]" src="./assets/time.png" alt="clock" />
+                    <span class="font-bold">Call History</span>
+                </div>
+                <button class="bg-green-500 rounded-4xl text-white w-[30%] h-[35px] cursor-pointer hover:bg-green-600">
+                    Clear
+                </button>
+            </div>
+
+            <!-- logs -->
+            <div id="history" class="flex flex-col justify-between items-center">
+                <div class="flex w-full justify-between items-center bg-gray-100 rounded-lg px-[10px] my-[10px] py-[15px]">
+                    <div class="flex flex-col">
+                        <span class="font-bold">
+                            Fire Service Number
+                        </span>
+                        <span class="text-gray-400">
+                            999
+                        </span>
+                    </div>
+                    <p>
+                        11:36:58 AM
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
